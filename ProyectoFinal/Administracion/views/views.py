@@ -3,4 +3,4 @@ from django.views.generic import TemplateView
 # Create your views here.
 
 class vistaTemplate(TemplateView):
-    template_name = 'Administracion/Base/AdminAgregar.html'
+    template_name = 'Administracion/Base/Agregar/AdminAgregar.html'
