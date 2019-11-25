@@ -1,0 +1,1 @@
+Hacer un metod JS o JQuery que dependiendo el url modifique el metodo para hacer minusculas todo el contenido del agregar

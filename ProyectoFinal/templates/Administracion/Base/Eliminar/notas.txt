@@ -1,0 +1,1 @@
+Hacer el cambio de estado del libro desde ajax
