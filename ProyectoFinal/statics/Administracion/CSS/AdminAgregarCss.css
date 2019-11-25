@@ -1,0 +1,4 @@
+#AdminAgregarContenido{/*Aqui le damos espacio al contenido de la pagina para que no estorbe con la navbar*/
+	position: relative;
+	top: 75px;
+}
