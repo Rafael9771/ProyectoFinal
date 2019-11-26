@@ -2,7 +2,6 @@ from django.db import models
 
 import datetime
 
-# Create your models here.
 
 class Autor(models.Model):
     id_autor = models.AutoField(primary_key=True)
@@ -12,6 +11,9 @@ class Autor(models.Model):
     fecha_creacion_autor = models.DateField()
     fecha_modificacion_autor = models.DateField()
     status_autor = models.CharField('status',blank=False, max_length=1)
+
+    class Meta:
+        db_table = 'Autor'
 
 
     def __str__(self):
@@ -26,6 +28,9 @@ class Categoria(models.Model):
     fecha_modificacion_categoria = models.DateField()
     status_categoria = models.CharField('status', blank=False, max_length=1)
 
+    class Meta:
+        db_table = 'Categoria'
+
     def __str__(self):
         return self.nombre_categoria
 
@@ -37,6 +42,9 @@ class Editorial(models.Model):
     fecha_creacion_editorial = models.DateField()
     fecha_modificacion_editorial = models.DateField()
     status_editorial = models.CharField('status', blank=False, max_length=1)
+
+    class Meta:
+        db_table = 'Editorial'
 
     def __str__(self):
         return self.nombre_editorial
@@ -56,6 +64,9 @@ class Servicios(models.Model):
     fecha_modificacion_servicio = models.DateField()
     status_servicio = models.CharField('status', blank=False, max_length=1)
 
+    class Meta:
+        db_table = 'Servicios'
+
     def __str__(self):
         return self.nombre_servicio
 
@@ -68,6 +79,9 @@ class Sucursales(models.Model):
     fecha_creacion_sucursal = models.DateField()
     fecha_modificacion_sucursal = models.DateField()
     status_sucursal = models.CharField('status', blank=False, max_length=1)
+
+    class Meta:
+        db_table = 'Sucursales'
 
     def __str__(self):
         return self.nombre_sucursal
@@ -87,6 +101,9 @@ class Libro(models.Model):
     sinopsis = models.CharField('sinopsis', blank=False, default='o', max_length=1000)
     status_libro = models.CharField('status',blank=False, max_length=1)
 
+    class Meta:
+        db_table = 'Libro'
+
     def __str__(self):
         return self.titulo_libro
 
@@ -101,6 +118,9 @@ class Revista(models.Model):
     costo = models.IntegerField('costo', blank=False, default=0)
     status_revista = models.CharField('status', blank=False, max_length=1)
 
+    class Meta:
+        db_table = 'Revista'
+
     def __str__(self):
         return self.titulo_revista
 
@@ -112,6 +132,9 @@ class Usuario(models.Model):
     fecha_modificacion = models.DateField()
     status = models.CharField('Status', blank=True, max_length=1)
 
+    class Meta:
+        db_table = 'Usuario'
+
     def __str__(self):
         return self.username
 
@@ -120,4 +143,7 @@ class codigoAdmin(models.Model):
     id_codigo = models.AutoField(primary_key=True)
     codigo = models.CharField('codigo', blank=False, max_length=6)
     usuario = models.ForeignKey(Usuario, on_delete=models.CASCADE)
+
+    class Meta:
+        db_table = 'codigoAdmin'
 

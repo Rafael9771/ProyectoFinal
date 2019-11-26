@@ -4,7 +4,12 @@
     <list default="true" id="abd7a737-e504-4f2e-9c44-8d686b4121e2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProyectoFinal/Administracion/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/Administracion/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoFinal/Administracion/views/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/Administracion/views/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoFinal/ProyectoFinal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/ProyectoFinal/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProyectoFinal/Public/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/Public/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoFinal/Public/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/Public/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoFinal/Public/views/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/Public/views/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoFinal/templates/Administracion/Base/Agregar/AdminAgregar.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/templates/Administracion/Base/Agregar/AdminAgregar.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
