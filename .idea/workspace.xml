@@ -2,34 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="abd7a737-e504-4f2e-9c44-8d686b4121e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/Administracion/views/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/Administracion/views/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/AdminAgregarCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Agregar/AdminAgregarCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap-grid.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap-grid.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap-grid.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap-grid.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap-grid.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap-grid.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap-grid.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap-grid.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap-reboot.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap-reboot.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap-reboot.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap-reboot.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap-reboot.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap-reboot.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap-reboot.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/bootstrap.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Bootstrap/bootstrap.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/CSS/Agregar/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/bootstrap.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/Bootstrap/bootstrap.bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/bootstrap.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/Bootstrap/bootstrap.bundle.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/Bootstrap/bootstrap.bundle.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/bootstrap.bundle.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/Bootstrap/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/Bootstrap/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/bootstrap.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/Bootstrap/bootstrap.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/Bootstrap/bootstrap.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/bootstrap.min.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/Bootstrap/bootstrap.min.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/jquery-3.4.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/JQuery/jquery-3.4.1.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/popper.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/statics/Administracion/JS/Bootstrap/popper.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProyectoFinal/templates/Administracion/Base/AdminAgregar.html" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoFinal/templates/Administracion/Base/Agregar/AdminAgregar.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
