@@ -1,0 +1,55 @@
+{% extends 'Administracion/Base/Agregar/AdminAgregar.html' %}
+{% load staticfiles %}
+
+{% block tiruloAgregar %}
+    <title>Agregar Admin</title>
+{% endblock %}
+
+{% block tituloAdd %}
+    <h1>Agregando Admin</h1>
+{% endblock%}
+
+{% block jquery %}
+
+    <script>
+        $( document ).ready(function() {
+            document.getElementById("adminExistente").style.display = 'none';
+
+            var inputFModificacion = document.getElementById("id_fecha_creacion");
+            var inputFCreacion = document.getElementById("id_fecha_modificacion");
+            var inputStatus = document.getElementById("id_status");
+
+            inputStatus.value = 'B';
+
+
+
+            var a = ['id_status','id_fecha_creacion','id_fecha_modificacion'];
+            for(var i=0; i<a.length; i++){
+            $('label[for=' + a[i] + '], input#' + a[i]).hide();
+            }
+
+        });
+
+        $("#id_username").keyup( function() {
+            username = $("#id_username").val();
+
+            $.ajax({
+            url: '/admin/AdminExist',
+            data: {
+                'username': username
+            },
+            dataType: 'json',
+            success: function (data) {
+                if (data.is_taken) {
+                    document.getElementById("adminExistente").style.display = 'block';
+                    document.getElementById("btnAgregar").disabled=true;
+                }else{
+                    document.getElementById("adminExistente").style.display = 'none';
+                    document.getElementById("btnAgregar").disabled=false;
+                }
+            }
+        });
+        });
+    </script>
+
+{% endblock %}
