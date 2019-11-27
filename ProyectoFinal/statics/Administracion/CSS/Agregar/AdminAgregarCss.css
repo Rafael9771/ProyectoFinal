@@ -2,3 +2,15 @@
 	position: relative;
 	top: 75px;
 }
+
+#formulario{
+	position: relative;
+	margin-left: 25%;
+	text-align: center;
+	margin-right: 25%;
+	width: 50%;
+	height: 50%;
+	margin-top: 15%;
+	background-color: white;
+
+}
