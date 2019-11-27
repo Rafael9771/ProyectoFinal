@@ -5,5 +5,6 @@ from .views.views import *
 app_name = "Public"
 
 urlpatterns = [
-    path('', i.as_view(), name="calisBD"),
+    path('addLogin', addServicio.as_view(), name="calisBD"),
+
 ]
