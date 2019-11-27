@@ -1,0 +1,98 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    {% block tiruloAgregar %}
+        <title>Administracion</title>
+    {% endblock %}
+
+    {% block css %}
+        <link rel="stylesheet" href="{% static 'Administracion/CSS/Bootstrap/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'Administracion/CSS/Agregar/navbar.css' %}">
+        <link rel="stylesheet" href="{% static 'Administracion/CSS/InicioSesion/inicio.css' %}">
+    {% endblock %}
+
+    {% block script %}
+        <script src="{% static 'Administracion/JS/JQuery/jquery-3.4.1.min.js' %}"></script>
+        <script src="{% static 'Administracion/JS/Bootstrap/popper.min.js'%}"></script>
+        <script src="{% static 'Administracion/JS/Bootstrap/bootstrap.min.js'%}"></script>
+        <script src="{% static 'Administracion/JS/InicioSesion/inicio.js'%}"></script>
+    {% endblock %}
+</head>
+<body>
+
+ <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <form  id="formulario"> {% csrf_token %}
+                      <input type="text" placeholder="Username" name="username" id="username" aria-label="Search">
+                      <input type="password" placeholder="Password" name="password" id="password" aria-label="Search">
+
+                      <button  type="submit" id="inicioSesion">Search</button>
+                      <h3 id="ErrorSesion">Error usuario o contraseña</h3>
+                  </form>
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+        </nav>
+    </header>
+
+ <script>
+    $( document ).ready(function() {
+        document.getElementById("ErrorSesion").style.display = 'none';
+    });
+
+    /*Este metodo comprueba el usuario y contraseña antes de que se inicie sesion*/
+    $("#inicioSesion").click(function (e){
+
+        $("form").submit(function(e){
+            e.preventDefault();
+        });
+
+        var username = $("#username").val();
+        var password = $("#password").val();
+
+        $.ajax({
+            url: '/admin/validacionAdmin',
+            data: {
+                'username': username,
+                'password': password
+            },
+            dataType: 'json',
+            success: function (data) {
+                if (data.is_taken) {
+                    alert("iniciaste sesion correctamente");
+                    iniciar()
+                }else if(data.is_default){
+                    alert("Inicio sesion con el usuario defecto de la pag");
+                    iniciarP()
+                }else{
+                    document.getElementById("ErrorSesion").style.display = 'block';
+
+
+                }
+            }
+        });
+
+    });
+ </script>
+
+</body>
+</html>
